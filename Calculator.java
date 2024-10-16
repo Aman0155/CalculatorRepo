@@ -9,6 +9,10 @@ class Calculator {
 		c=a-b;
 		System.out.println("Subtraction is"+c);
 		//multiplication 
-		System.out.println("Multiplication is"+c);   
+		c=a*b;
+		System.out.println("Multiplication is"+c);
+		//division
+		c=a/b;
+		System.out.println("Division is"+c);   
 }
 }
