@@ -1,0 +1,29 @@
+public class Simple {
+    public static void main(String[] args) {
+        if (args.length < 8) {
+            System.out.println("Please provide all 8 arguments: byte, short, int, long, float, double, char, boolean");
+            return;
+        }
+
+        // Parsing command-line arguments
+        byte value = Byte.parseByte(args[0]);
+        short shortValue = Short.parseShort(args[1]);
+        int a = Integer.parseInt(args[2]);
+        long longValue = Long.parseLong(args[3]);
+        float floatValue = Float.parseFloat(args[4]);
+        double doubleValue = Double.parseDouble(args[5]);
+        char charValue = args[6].charAt(0);
+        boolean bool = Boolean.parseBoolean(args[7]);
+
+        // Output the values
+        System.out.println("\nYou entered:");
+        System.out.println("Byte: " + value);
+        System.out.println("Short: " + shortValue);
+        System.out.println("Int: " + a);
+        System.out.println("Long: " + longValue);
+        System.out.println("Float: " + floatValue);
+        System.out.println("Double: " + doubleValue);
+        System.out.println("Char: " + charValue);
+        System.out.println("Boolean: " + bool);
+    }
+}
